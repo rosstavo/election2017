@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Election 2017 – Choose Your Adventure!</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/eo-all-emoji.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script src="https://use.typekit.net/zqw5lei.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+<body>
+	<div class="path" id="path"></div>
+
+	<div id="no-js">Please enable Javascript to play this game.</div>
+
+	<main id="main" class="main">
+
+		<h3>
+			<img src="imgs/unionflag.png" alt="Union Flag" class="flag">
+			Election 2017
+		</h3>
+
+		<h1 id="title" class="title">Choose Your Adventure</h1>
+
+		<div id="query">
+			<p>The clock strikes <a href="http://www.mirror.co.uk/news/politics/enthusiastic-theresa-early-statement-early-10247413" target="_blank" class="ref">11:04am</a> on Tuesday, 18th April 2017. Theresa May appears on the TV like a spectre announcing impending doom, and proposes a &ldquo;snap&rdquo; election, the words making your spine tingle.</p>
+			<p>Oh no. Not this again.</p>
+			<p>You're politically weary, but convicted to exercise your democratic duty, so you register to vote. What <strong>name</strong> do you enter?</p>
+		</div>
+
+		<div class="buttons">
+			<input id="input" type="text" class="first-input" placeholder="Type a name" autofocus>
+			<input id="next" type="button" value="&rarr;">
+			<input id="reload" type="button" value="Retry?" onclick="window.location.reload()">
+		</div>
+
+		<div id="inventory"></div>
+
+		<div id="error-message"></div>
+
+		<nav class="site-navigation">
+			<ul id="menu" class="menu">
+				<li class="menu-item">
+					<a href="" id="help-toggle">Help</a>
+				</li>
+				<li class="menu-item" id="reset">
+					<a href="" onclick="window.location.reload()">Reset</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="help" id="help">
+			<p>Welcome to <em>UK Election 2017: Choose Your Adventure</em>. As you progress through the game, you’ll be asked to respond to a series of scenarios. Simply type your answer, or click one of the possible answers in <strong><span style="color: #C7000B;">red</span></strong> to prefill the answer box.</p>
+			<h4>Items</h4>
+			<p>When you choose a party you will also be given an item, which you can use for bonus outcomes. But it can only be used once!</p>
+			<h4>Shortcuts</h4>
+			<p>If you don't want to type or click an answer, you can also type 1, 2, 3, etc. depending on the question.</p>
+			<h4>Context</h4>
+			<p>Also, if you see a red asterisk (<span style="color: #C7000B;">*</span>) you can click the text to get some political context.</p>
+			<h4>Disclaimer</h4>
+			<p>This is a satirical game with no intentional bias&mdash;all parties are free game. However, expect the author's political pessimism to come across.</p>
+			<p><em>UK Election 2017: Choose Your Adventure</em> has no affiliation with or endorsement from <a href="https://www.cyoa.com/" target="_blank">Chooseco LLC</a>.</p>
+			<p>Backpack icon created by <a href="https://thenounproject.com/term/backpack/74337/">Michael Stüker.</a></p>
+		</div>
+	</main>
+
+	<footer id="footer">
+		<p class="info"><em>UK Election 2017: Choose Your Adventure</em> was created by <a href="http://nevisonhardy.co.uk">Ross Hardy</a> with writing input from <a href="https://steadmanasshegoes.wordpress.com/">Jen Steadman</a>.</p>
+	</footer>
+</body>
+
+</html>
