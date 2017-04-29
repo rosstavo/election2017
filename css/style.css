@@ -518,20 +518,21 @@ a:visited {
 
 a.ref {
     text-decoration: none;
-    font-weight: bold;
+    /*border-bottom: 1px dotted lightgrey;*/
 }
 
-a.ref:after {
-    content: '*';
-    color: #C7000B;
+.ref:after {
+    content: '[?]';
+    font-size: 50%;
+    vertical-align: text-top;
 }
 
 a.prefill {
     text-decoration: none;
-    color: black;
     font-weight: bold;
     cursor: pointer;
     color: #C7000B;
+    /*border-bottom: 1px dotted #C7000B;*/
 }
 
 .info {
@@ -622,7 +623,7 @@ input {
 }
 
 #error-message {
-    color: darkred;
+    color: #C7000B;
     text-align: center;
 }
 
@@ -734,8 +735,6 @@ li {
 }
 
 .em {
-    /*height: 1em;
-    width: 1em;*/
     vertical-align: text-bottom;
 }
 

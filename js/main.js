@@ -194,7 +194,7 @@
                         ]
                     },
                     {
-                        question: "<p>You finally arrive at the polling station. Theresa May is stood there awkwardly by herself. You ignore her too and go chat to your local Conservative candidate.</p><p>After a few words you realise you've made an awful mistake. Do you <a class=\"prefill\">leave</a> the party and go with the Independent candidate, or <a class=\"prefill\">remain</a> with the Conservatives?</p>",
+                        question: "<p>You finally arrive at the polling station. <strong>Theresa May</strong> is stood there awkwardly by herself. You ignore her too and go chat to your local Conservative candidate.</p><p>After a few words you realise you've made an awful mistake. Do you <a class=\"prefill\">leave</a> the party and go with the Independent candidate, or <a class=\"prefill\">remain</a> with the Conservatives?</p>",
                         replies: [
                             {
                                 answers: [ 'leave', 'a', '1' ],
@@ -251,12 +251,12 @@
                             },
                             {
                                 answers: [ 'wait', 'c', '3' ],
-                                result: "<p>You wait until Mr. Johnson has left the scene and lean down to peel the sticker off. Unfortunately it’s one of those stickers that peels off really unsatisfyingly and it takes you hours to remove, leaving a grubby residue.</p><p>By the time you make it to the polling station it’s closed so you never cast your vote. The Conservatives are elected via a landslide majority, enact a hard Brexit, and Mr. Johnson uses NHS money to commission a <a href=\"http://www.independent.co.uk/news/uk/politics/royal-yacht-britannia-monarchy-boris-johnson-republic-money-a7628416.html\" class=\"ref\" target=\"blank\">Royal Yacht</a>, thinking it will make trade deals easier with the &ldquo;<a href=\"http://www.telegraph.co.uk/comment/personal-view/3571742/If-Blairs-so-good-at-running-the-Congo-let-him-stay-there.html\" class=\"ref\" target=\"blank\">piccaninnies</a>.&rdquo;</p>",
+                                result: "<p>You wait until Mr. Johnson has left the scene and lean down to peel the sticker off. Unfortunately it’s one of those stickers that peels off rather unsatisfyingly and it takes you hours to remove, leaving a grubby residue.</p><p>By the time you make it to the polling station it’s closed so you never cast your vote. The Conservatives are elected via a landslide majority, enact a hard Brexit, and Mr. Johnson uses NHS money to commission a <a href=\"http://www.independent.co.uk/news/uk/politics/royal-yacht-britannia-monarchy-boris-johnson-republic-money-a7628416.html\" class=\"ref\" target=\"blank\">Royal Yacht</a>, thinking it will make trade deals easier with the &ldquo;<a href=\"http://www.telegraph.co.uk/comment/personal-view/3571742/If-Blairs-so-good-at-running-the-Congo-let-him-stay-there.html\" class=\"ref\" target=\"blank\">piccaninnies</a>.&rdquo;</p>",
                                 gameover: true
                             },
                             {
                                 answers: [ 'use item', 'straight banana', 'use straight banana', 'use banana', 'banana' ],
-                                result: "<p>You eat the <strong>straight banana</strong> and discreetly place the peel behind Mr. Johnson. He steps back—and obviously doesn’t slip because this isn’t Mario Kart, and bananas really aren’t that slippery. However his general oafishness causes him to trip over anyway. You remove the sticker and go on your way.</p>",
+                                result: "<p>You eat the <strong>straight banana</strong> and discreetly place the peel behind Mr. Johnson. He steps back—and obviously doesn’t slip because this isn’t <em>Mario Kart</em>, and bananas really aren’t that slippery. However his general oafishness causes him to trip over anyway. You remove the sticker and go on your way.</p>",
                                 itemRequired: 'straight banana',
                                 gameover: false
                             }
@@ -345,7 +345,7 @@
                         ]
                     },
                     {
-                        question: "<p>You take a shortcut through a council estate, where you spot Theresa May being shown around a community centre. She begins a speech where she extols the need for <a href=\"http://www.telegraph.co.uk/news/2017/04/26/pmqs-times-theresa-may-says-strong-stable/\" class=\"ref\" target=\"blank\">strong and stable leadership</a>. You also notice a group of unemployed youths nearby smoking cannabis.</p><p>Do you <a class=\"prefill\">heckle</a> Mrs. May, get help from the <a class=\"prefill\">youths</a>, or <a class=\"prefill\">ignore</a> the situation?</p>",
+                        question: "<p>You take a shortcut through a council estate, where you spot <strong>Theresa May</strong> being shown around a community centre. She begins a speech where she extols the need for <a href=\"http://www.telegraph.co.uk/news/2017/04/26/pmqs-times-theresa-may-says-strong-stable/\" class=\"ref\" target=\"blank\">strong and stable leadership</a>. You also notice a group of unemployed youths nearby smoking cannabis.</p><p>Do you <a class=\"prefill\">heckle</a> Mrs. May, get help from the <a class=\"prefill\">youths</a>, or <a class=\"prefill\">ignore</a> the situation?</p>",
                         replies: [
                             {
                                 answers: [ 'heckle', 'a', '1' ],
@@ -371,7 +371,7 @@
                         ]
                     },
                     {
-                        question: "<p>You finally arrive at the polling station. Caroline Lucas and Jonathan Bartley are there outside to greet you and introduce you to your local Green party candidate.</p><p>After a few words you realise you've made an awful mistake. Do you <a class=\"prefill\">leave</a> the party and go with the Independent candidate, or <a class=\"prefill\">remain</a> with the Greens?</p>",
+                        question: "<p>You finally arrive at the polling station. <strong>Caroline Lucas</strong> and <strong>Jonathan Bartley</strong> are there outside to greet you and introduce you to your local Green party candidate.</p><p>After a few words you realise you've made an awful mistake. Do you <a class=\"prefill\">leave</a> the party and go with the Independent candidate, or <a class=\"prefill\">remain</a> with the Greens?</p>",
                         replies: [
                             {
                                 answers: [ 'leave', 'a', '1' ],
@@ -398,12 +398,38 @@
             'snp' : {
                 names: [ 'snp', 'the snp', 'scottish national party', 'nicola sturgeon', 'nicola', 'sturgeon', 's', 'sn', '6' ],
                 colour: '#f1c40f',
-                item: 'haggis',
+                item: 'scissors',
                 stages: [
                     {
                         replies: [
                             {
                                 result: "<p>Your heart leads you to the Scottish National Party. As a voting incentive, you are given a fetching tartan-patterned pair of <strong>scissors</strong>.</p><p>With spirit and determination, you set out across the Highlands towards the polling station.</p>",
+                            }
+                        ]
+                    },
+                    {
+                        question: "<p>As you crest the braigh, you run into <strong>Theresa May</strong> in <a href=\"https://www.theguardian.com/politics/2016/aug/12/theresa-may-seeks-peace-and-quiet-on-alpine-walking-holiday\" class=\"ref\" target=\"_blank\">full hiking equipment</a>, gale force winds whipping her hair around. &ldquo;A fine country,&rdquo; she shouts. Aye.</p><p>She continues, &ldquo;&mdash;but greater as part of a United Kingdom under my <a href=\"http://www.telegraph.co.uk/news/2017/04/26/pmqs-times-theresa-may-says-strong-stable/\" class=\"ref\" target=\"_blank\">strong and stable leadership</a>.&rdquo;</p><p>Do you <a class=\"prefill\">ignore</a>, <a class=\"prefill\">attack</a>, or <a class=\"prefill\">cry freedom</a>?</p>",
+                        replies: [
+                            {
+                                answers: [ 'ignore', 'a', '1' ],
+                                result: "<p></p>",
+                                gameover: true
+                            },
+                            {
+                                answers: [ 'attack', 'b', '2' ],
+                                result: "<p>You <strong>attack</strong> Mrs. May, unsheathing your claymore and hewing her hiking poles in twain. Suddenly imbalanced, she falls backwards and rolls down the side of the torr.</p><p>You quote <a href=\"http://www.imdb.com/title/tt0112573/quotes?item=qt0440126\" class=\"ref\" target=\"_blank\">William Wallace</a>: “Every man dies, not every man really lives.”</p><p>Indeed.</p>",
+                                gameover: false
+                            },
+                            {
+                                answers: [ 'cry freedom', 'c', '3', 'freedom' ],
+                                result: "<p></p>",
+                                gameover: false
+                            },
+                            {
+                                answers: [ 'use item', 'scissors', 'use scissors', 'use pair of scissors', 'pair of scissors' ],
+                                result: "<p></p>",
+                                itemRequired: 'scissors',
+                                gameover: false
                             }
                         ]
                     }
