@@ -78,32 +78,26 @@
                         ]
                     },
                     {
-                        question: "<p>As you strut along, <strong>Nicola Sturgeon</strong> emerges from the grove, uproots a tree and tosses it like a caber, blocking your path. \"You'll need me on your side to help you move this tree,\" she claims.</p><p>Do you attempt to <a class=\"prefill\">lift</a> it yourself, form a <a class=\"prefill\">coalition</a> to lift the tree, or <a class=\"prefill\">employ</a> some nearby workers to help?</p>",
+                        question: "<p>You ride past some large skidmarks, and round the corner you encounter the <a href=\"http://www.bbc.co.uk/news/uk-politics-eu-referendum-36379061\" class=\"ref\" target=\"_blank\">Brexit bus</a>, balanced precariously on the <a href=\"https://www.youtube.com/watch?v=HZCaSyid4m0\" class=\"ref\" target=\"_blank\">edge of a cliff</a>. You step inside to see <strong>Nigel Farage</strong>, <strong>Boris Johnson</strong>, and <strong>Michael Gove</strong> at the end of the bus nearest you, and a large stack of cash labelled &ldquo;NHS budget&rdquo; at the far end.</p><p>Do you <a class=\"prefill\">barter</a> with them, <a class=\"prefill\">retrieve</a> the cash yourself, or <a class=\"prefill\">exit</a> the bus?</p>",
                         replies: [
                             {
-                                answers: [ 'lift', 'a', '1' ],
-                                result: "<p>You stubbornly attempt to <strong>lift</strong> the tree yourself. \"No coalitions, no tie-ins, no deals!\" you cry.</p><p>You unsurprisingly put your back out within seconds. You're too unwell to cast your vote, the Conservatives get re-elected via a majority, and they ruin the NHS. You're given a dodgy chiropractor whose incompetence leaves you permanently disabled.</p>",
+                                answers: [ 'barter', 'a', '1' ],
+                                result: "<p>You <strong>barter</strong> a deal, where you offer your help in exchange for a guarantee the cash goes to the NHS. At that moment <strong>Donald Tusk</strong> also gets on the bus and interferes, stating &ldquo;No trade negotiations until after Brexit has been finalised.&rdquo; Now weighed down by 5 people, the bus becomes more stable, allowing the cash to be retrieved.</p>",
+                                gameover: false
+                            },
+                            {
+                                answers: [ 'retrieve', 'b', '2' ],
+                                result: "<p>The NHS means a lot to you so you decide it’s in the national interest to <strong>retrieve</strong> the cash. You get on your front and crawl down the bus, but as you get close, the three men step off the bus. Your weight causes the bus to teeter over the edge, carrying you down into oblivion.</p><p>You never cast your vote, the Conservatives get re-elected via a landslide majority, and Mr. Johnson retrieves the NHS cash from the bottom of the cliff for a new <a href=\"http://www.independent.co.uk/news/uk/politics/royal-yacht-britannia-monarchy-boris-johnson-republic-money-a7628416.html\" class=\"ref\" target=\"blank\">Royal Yacht</a>, thinking it will make trade deals easier with the &ldquo;<a href=\"http://www.telegraph.co.uk/comment/personal-view/3571742/If-Blairs-so-good-at-running-the-Congo-let-him-stay-there.html\" class=\"ref\" target=\"blank\">piccaninnies</a>.&rdquo;</p>",
                                 gameover: true
                             },
                             {
-                                answers: [ 'coalition', 'b', '2' ],
-                                result: "<p>In order to get past the tree, you form a <strong>coalition</strong> with Mrs. Sturgeon. You're not sure if she has your best interests at heart, but you go ahead anyway and with her help you clear the path. On you go towards the polling station.</p>",
-                                gameover: false
-                            },
-                            {
-                                answers: [ 'employ', 'c', '3' ],
-                                result: "<p>You decide to <strong>employ</strong> some nearby workers to help. They're idle anyway, as they're on exploitative zero-hours contracts.</p><p>Unfortunately you can't afford them, so you phone up the bank and ask for a loan. Once it's approved you pay the workers, they move the tree and you continue to the polling station.</p>",
-                                gameover: false
-                            },
-                            {
-                                answers: [ 'use item', 'money', 'use money' ],
-                                result: "<p>You use the money.</p>",
-                                itemRequired: 'money',
+                                answers: [ 'exit', 'c', '3' ],
+                                result: "<p>&ldquo;Hang on a minute lads, I’ve got a great idea,&rdquo; you say. You <strong>exit</strong> the bus and cycle away, deciding they should take responsibility for the mess they’ve made. Onwards to the polling station!</p>",
                                 gameover: false
                             },
                             {
                                 answers: [ 'use item', 'school meal', 'use school meal' ],
-                                result: "<p>You use the school meal.</p>",
+                                result: "<p>You eat your <strong>school meal</strong> as it’s a lot harder to think clearly on an empty stomach.</p><p>&ldquo;Hang on a minute lads, I’ve got a great idea,&rdquo; you say. &ldquo;Boris, call the <em>Financial Times</em> and tell them you’re going to commission something ridiculous like a <a href=\"http://www.independent.co.uk/news/uk/politics/royal-yacht-britannia-monarchy-boris-johnson-republic-money-a7628416.html\" class=\"ref\" target=\"blank\">Royal Yacht</a>.&rdquo;</p><p>The <em>FT</em> snaps it up and publishes the article, causing the Pound to lose value, which in turn reduces the weight of the cash at the end of the bus allowing it to be retrieved.</p>",
                                 itemRequired: 'school meal',
                                 gameover: false
                             }
@@ -422,12 +416,12 @@
                             },
                             {
                                 answers: [ 'cry freedom', 'c', '3', 'freedom' ],
-                                result: "<p></p>",
+                                result: "<p>You puff out your chest and <strong>cry freedom</strong>. The words echo around the valley, alerting the clans who form up in your aid. An intimidated Mrs. May flees, unable to withstand the power of your combined spirit. After erecting a monument to mark the event, you leave the clansmen and women and go forth into the heath.</p>",
                                 gameover: false
                             },
                             {
                                 answers: [ 'use item', 'scissors', 'use scissors', 'use pair of scissors', 'pair of scissors' ],
-                                result: "<p></p>",
+                                result: "<p>You pull out your <strong>scissors</strong>. Stooping to the ground, you cut a Scotch thistle and present it to Mrs. May with a warning: &ldquo;<a href=\"https://en.wikipedia.org/wiki/Nemo_me_impune_lacessit\" class=\"ref\" target=\"_blank\">Wha daur meddle wi' me?</a>&rdquo;</p><p>She is clearly intimidated, but opportunistically snatches the scissors from you&mdash;probably to make more benefit cuts&mdash;before power-walking away. You descend down the mountainside and venture out into the heath.</p>",
                                 itemRequired: 'scissors',
                                 gameover: false
                             }
@@ -809,6 +803,9 @@
                 item = '';
 
                 renderInventory();
+
+                // Get people to register to vote
+                query.append( '<hr /><p class="text-center"><em>Note from the author:</em> Thankfully whatever happens, it won\'t be that bad. However to get the best possible outcome for the country this election season, remember to <a href=\"https://www.gov.uk/register-to-vote\" target=\"_blank\">register to vote!</a></p>' );
 
                 // Show retry button
                 retryButton();
