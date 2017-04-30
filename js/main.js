@@ -51,11 +51,11 @@
                         ]
                     },
                     {
-                        question: "<p>As you cycle out of the village green, <strong>Theresa May</strong> ambushes you from a large broccoli-like tree. As she swings down, the sunlight catches her <a href=\"http://www.bbc.co.uk/news/uk-politics-38287637\" class=\"ref\" target=\"blank\">shiny trousers</a> and you're momentarily blinded.</p><p>&ldquo;We are the party of <a href=\"http://www.telegraph.co.uk/news/2017/04/26/pmqs-times-theresa-may-says-strong-stable/\" class=\"ref\" target=\"blank\">strong and stable leadership</a>,&rdquo; she says. &ldquo;It’s in the nation’s best interest to vote Conservative.&rdquo;</p><p>Do you <a class=\"prefill\">argue</a>, <a class=\"prefill\">run</a>, or <a class=\"prefill\">defect</a>?</p>",
+                        question: "<p>As you cycle out of the village green, <strong>Theresa May</strong> ambushes you from a large broccoli-like tree. As she swings down, the sunlight catches her <a href=\"http://www.bbc.co.uk/news/uk-politics-38287637\" class=\"ref\" target=\"blank\">shiny trousers</a> and you're momentarily blinded.</p><p>&ldquo;We are the party of <a href=\"http://www.telegraph.co.uk/news/2017/04/26/pmqs-times-theresa-may-says-strong-stable/\" class=\"ref\" target=\"blank\">strong and stable leadership</a>,&rdquo; she says. &ldquo;It&rsquo;s in the nation&rsquo;s best interest to vote Conservative.&rdquo;</p><p>Do you <a class=\"prefill\">argue</a>, <a class=\"prefill\">run</a>, or <a class=\"prefill\">defect</a>?</p>",
                         replies: [
                             {
                                 answers: [ 'argue', 'a', '1' ],
-                                result: "<p>You start to <strong>argue</strong> that Mrs. May’s headstrong Brexit plan places the union in danger. &ldquo;I will not be participating in any <a href=\"http://www.bbc.co.uk/news/uk-politics-39633696\" class=\"ref\" target=\"blank\">television debates</a>!&rdquo; she exclaims, and runs off. You proceed along your way.</p>",
+                                result: "<p>You start to <strong>argue</strong> that Mrs. May&rsquo;s headstrong Brexit plan places the union in danger. &ldquo;I will not be participating in any <a href=\"http://www.bbc.co.uk/news/uk-politics-39633696\" class=\"ref\" target=\"blank\">television debates</a>!&rdquo; she exclaims, and runs off. You proceed along your way.</p>",
                                 gameover: false
                             },
                             {
@@ -87,17 +87,17 @@
                             },
                             {
                                 answers: [ 'retrieve', 'b', '2' ],
-                                result: "<p>The NHS means a lot to you so you decide it’s in the national interest to <strong>retrieve</strong> the cash. You get on your front and crawl down the bus, but as you get close, the three men step off the bus. Your weight causes the bus to teeter over the edge, carrying you down into oblivion.</p><p>You never cast your vote, the Conservatives get re-elected via a landslide majority, and Mr. Johnson retrieves the NHS cash from the bottom of the cliff for a new <a href=\"http://www.independent.co.uk/news/uk/politics/royal-yacht-britannia-monarchy-boris-johnson-republic-money-a7628416.html\" class=\"ref\" target=\"blank\">Royal Yacht</a>, thinking it will make trade deals easier with the &ldquo;<a href=\"http://www.telegraph.co.uk/comment/personal-view/3571742/If-Blairs-so-good-at-running-the-Congo-let-him-stay-there.html\" class=\"ref\" target=\"blank\">piccaninnies</a>.&rdquo;</p>",
+                                result: "<p>The NHS means a lot to you so you decide it&rsquo;s in the national interest to <strong>retrieve</strong> the cash. You get on your front and crawl down the bus, but as you get close, the three men step off the bus. Your weight causes the bus to teeter over the edge, carrying you down into oblivion.</p><p>You never cast your vote, the Conservatives get re-elected via a landslide majority, and despite surviving the fall you can&rsquo;t get a doctor to see you on a weekend, so you die.</p>",
                                 gameover: true
                             },
                             {
                                 answers: [ 'exit', 'c', '3' ],
-                                result: "<p>&ldquo;Hang on a minute lads, I’ve got a great idea,&rdquo; you say. You <strong>exit</strong> the bus and cycle away, deciding they should take responsibility for the mess they’ve made. Onwards to the polling station!</p>",
+                                result: "<p>&ldquo;Hang on a minute lads, I&rsquo;ve got a great idea,&rdquo; you say. You <strong>exit</strong> the bus and cycle away, deciding they should take responsibility for the mess they&rsquo;ve made. Onwards to the polling station!</p>",
                                 gameover: false
                             },
                             {
                                 answers: [ 'use item', 'school meal', 'use school meal' ],
-                                result: "<p>You eat your <strong>school meal</strong> as it’s a lot harder to think clearly on an empty stomach.</p><p>&ldquo;Hang on a minute lads, I’ve got a great idea,&rdquo; you say. &ldquo;Boris, call the <em>Financial Times</em> and tell them you’re going to commission something ridiculous like a <a href=\"http://www.independent.co.uk/news/uk/politics/royal-yacht-britannia-monarchy-boris-johnson-republic-money-a7628416.html\" class=\"ref\" target=\"blank\">Royal Yacht</a>.&rdquo;</p><p>The <em>FT</em> snaps it up and publishes the article, causing the Pound to lose value, which in turn reduces the weight of the cash at the end of the bus allowing it to be retrieved.</p>",
+                                result: "<p>You eat your <strong>school meal</strong> as it&rsquo;s a lot harder to think clearly on an empty stomach.</p><p>&ldquo;Hang on a minute lads, I&rsquo;ve got a great idea,&rdquo; you say. &ldquo;Boris, call the <em>Financial Times</em> and tell them you&rsquo;re going to commission something ridiculous like a <a href=\"http://www.independent.co.uk/news/uk/politics/royal-yacht-britannia-monarchy-boris-johnson-republic-money-a7628416.html\" class=\"ref\" target=\"blank\">Royal Yacht</a>.&rdquo;</p><p>The <em>FT</em> snaps it up and publishes the article, causing the Pound to lose value, which in turn reduces the weight of the cash at the end of the bus allowing it to be retrieved.</p>",
                                 itemRequired: 'school meal',
                                 gameover: false
                             }
@@ -192,7 +192,7 @@
                         replies: [
                             {
                                 answers: [ 'leave', 'a', '1' ],
-                                result: "<p>Just like <a href=\"http://www.bbc.co.uk/news/uk-politics-36672591\" class=\"ref\" target=\"blank\">Michael Gove’s cold knife</a> into the back of Boris &lsquo;Julius&rsquo; Johnson, you betray your party and <strong>leave</strong> for your constituency's Independent candidate. Your vote hits the bottom of the ballot box. Outside you hear a cockerel crow. Congratulations, you successfully voted!</p>",
+                                result: "<p>Just like <a href=\"http://www.bbc.co.uk/news/uk-politics-36672591\" class=\"ref\" target=\"blank\">Michael Gove&rsquo;s cold knife</a> into the back of Boris &lsquo;Julius&rsquo; Johnson, you betray your party and <strong>leave</strong> for your constituency's Independent candidate. Your vote hits the bottom of the ballot box. Outside you hear a cockerel crow. Congratulations, you successfully voted!</p>",
                                 defect: 'independent',
                                 gameover: false
                             },
@@ -216,7 +216,7 @@
                         ]
                     }
                 ],
-                endresult: "<ul><li>The Conservatives are elected via a majority. Your vote was a mere droplet in an unstoppable tide of blue.</li><li>With her new five-fold majority government, Theresa May assumes a mandate for a full Brexit, walling off the Eurotunnel and deploying gunboats off the coast. The first victim is national treasure David Walliams on a charity swim.</li><li>Upon hearing that Piers Morgan is slated to fill his seat on Britain’s Got Talent, the proletariat gather and raze the City, Parliament and all of Maidenhead.</li><li>The Green party are elected in 2020 and ban the Grand National, meat, and the Queen.</li></ul>"
+                endresult: "<ul><li>The Conservatives are elected via a majority. Your vote was a mere droplet in an unstoppable tide of blue.</li><li>With her new five-fold majority government, Theresa May assumes a mandate for a full Brexit, walling off the Eurotunnel and deploying gunboats off the coast. The first victim is national treasure David Walliams on a charity swim.</li><li>Upon hearing that Piers Morgan is slated to fill his seat on Britain&rsquo;s Got Talent, the proletariat gather and raze the City, Parliament and all of Maidenhead.</li><li>The Green party are elected in 2020 and ban the Grand National, meat, and the Queen.</li></ul>"
             },
             'libdem' : {
                 names: [ 'libdem', 'liberal democrat', 'liberal democrats', 'lib dem', 'lib dems', 'tim farron', 'tim', 'farron', 'lib', 'li', 'libd', 'lib d', '3' ],
@@ -231,7 +231,7 @@
                         ]
                     },
                     {
-                        question: "<p>You enter the car park only to see <strong>Boris Johnson</strong> applying a Union Jack sticker over the EU badge on your numberplate.</p><p>Do you <a class=\"prefill\">confront</a>, <a class=\"prefill\">attack</a>, or <a class=\"prefill\">wait</a> until he’s gone to peel the sticker off?</p>",
+                        question: "<p>You enter the car park only to see <strong>Boris Johnson</strong> applying a Union Jack sticker over the EU badge on your numberplate.</p><p>Do you <a class=\"prefill\">confront</a>, <a class=\"prefill\">attack</a>, or <a class=\"prefill\">wait</a> until he&rsquo;s gone to peel the sticker off?</p>",
                         replies: [
                             {
                                 answers: [ 'confront', 'a', '1' ],
@@ -245,12 +245,12 @@
                             },
                             {
                                 answers: [ 'wait', 'c', '3' ],
-                                result: "<p>You wait until Mr. Johnson has left the scene and lean down to peel the sticker off. Unfortunately it’s one of those stickers that peels off rather unsatisfyingly and it takes you hours to remove, leaving a grubby residue.</p><p>By the time you make it to the polling station it’s closed so you never cast your vote. The Conservatives are elected via a landslide majority, enact a hard Brexit, and Mr. Johnson uses NHS money to commission a <a href=\"http://www.independent.co.uk/news/uk/politics/royal-yacht-britannia-monarchy-boris-johnson-republic-money-a7628416.html\" class=\"ref\" target=\"blank\">Royal Yacht</a>, thinking it will make trade deals easier with the &ldquo;<a href=\"http://www.telegraph.co.uk/comment/personal-view/3571742/If-Blairs-so-good-at-running-the-Congo-let-him-stay-there.html\" class=\"ref\" target=\"blank\">piccaninnies</a>.&rdquo;</p>",
+                                result: "<p>You wait until Mr. Johnson has left the scene and lean down to peel the sticker off. Unfortunately it&rsquo;s one of those stickers that peels off rather unsatisfyingly and it takes you hours to remove, leaving a grubby residue.</p><p>By the time you make it to the polling station it&rsquo;s closed so you never cast your vote. The Conservatives are elected via a landslide majority, enact a hard Brexit, and Mr. Johnson uses NHS money to commission a <a href=\"http://www.independent.co.uk/news/uk/politics/royal-yacht-britannia-monarchy-boris-johnson-republic-money-a7628416.html\" class=\"ref\" target=\"blank\">Royal Yacht</a>, thinking it will make trade deals easier with the &ldquo;<a href=\"http://www.telegraph.co.uk/comment/personal-view/3571742/If-Blairs-so-good-at-running-the-Congo-let-him-stay-there.html\" class=\"ref\" target=\"blank\">piccaninnies</a>.&rdquo;</p>",
                                 gameover: true
                             },
                             {
                                 answers: [ 'use item', 'straight banana', 'use straight banana', 'use banana', 'banana' ],
-                                result: "<p>You eat the <strong>straight banana</strong> and discreetly place the peel behind Mr. Johnson. He steps back—and obviously doesn’t slip because this isn’t <em>Mario Kart</em>, and bananas really aren’t that slippery. However his general oafishness causes him to trip over anyway. You remove the sticker and go on your way.</p>",
+                                result: "<p>You eat the <strong>straight banana</strong> and discreetly place the peel behind Mr. Johnson. He steps back—and obviously doesn&rsquo;t slip because this isn&rsquo;t <em>Mario Kart</em>, and bananas really aren&rsquo;t that slippery. However his general oafishness causes him to trip over anyway. You remove the sticker and go on your way.</p>",
                                 itemRequired: 'straight banana',
                                 gameover: false
                             }
@@ -272,21 +272,21 @@
                         ]
                     },
                     {
-                        question: "<p>You enter the car park only to see <strong>Tim Farron</strong> replacing the St. George’s Cross window flags on your Transit van with that of the European Union.</p><p>Do you <a class=\"prefill\">confront</a>, <a class=\"prefill\">attack</a> alone, or <a class=\"prefill\">wait</a> for the lads to arrive?</p>",
+                        question: "<p>You enter the car park only to see <strong>Tim Farron</strong> replacing the St. George&rsquo;s Cross window flags on your Transit van with that of the European Union.</p><p>Do you <a class=\"prefill\">confront</a>, <a class=\"prefill\">attack</a> alone, or <a class=\"prefill\">wait</a> for the lads to arrive?</p>",
                         replies: [
                             {
                                 answers: [ 'confront', 'a', '1' ],
-                                result: "<p>You choose to <strong>confront</strong> Mr. Farron. &ldquo;Typical Remoaner!&rdquo; you cry. You remove the flags and attempt to burn them, but due to EU regulations on fire prevention, <a href=\"https://www.youtube.com/watch?v=TQRg7wH_FC0\" class=\"ref\" target=\"blank\">they don’t catch</a>.</p><p>Doesn’t matter anyway, you still won the referendum. Soon you’ll be able to burn any flag you like. You hop in the van and pull out of the car park.</p>",
+                                result: "<p>You choose to <strong>confront</strong> Mr. Farron. &ldquo;Typical Remoaner!&rdquo; you cry. You remove the flags and attempt to burn them, but due to EU regulations on fire prevention, <a href=\"https://www.youtube.com/watch?v=TQRg7wH_FC0\" class=\"ref\" target=\"blank\">they don&rsquo;t catch</a>.</p><p>Doesn&rsquo;t matter anyway, you still won the referendum. Soon you&rsquo;ll be able to burn any flag you like. You hop in the van and pull out of the car park.</p>",
                                 gameover: false
                             },
                             {
                                 answers: [ 'attack', 'b', '2' ],
-                                result: "<p>You choose to <strong>attack</strong> Mr. Farron by yourself. However as you raise your proud British fist to strike him, your wrist is grabbed from behind. It’s <strong>Nigel Farage.</strong></p><p>&ldquo;Calm down my friend, it’s not the British way. Where’s your stiff upper lip?&rdquo;</p><p>Since it’s coming from Mr. Farage, you can see the logic. You walk past Mr. Farron and hop in the van.</p>",
+                                result: "<p>You choose to <strong>attack</strong> Mr. Farron by yourself. However as you raise your proud British fist to strike him, your wrist is grabbed from behind. It&rsquo;s <strong>Nigel Farage.</strong></p><p>&ldquo;Calm down my friend, it&rsquo;s not the British way. Where&rsquo;s your stiff upper lip?&rdquo;</p><p>Since it&rsquo;s coming from Mr. Farage, you can see the logic. You walk past Mr. Farron and hop in the van.</p>",
                                 gameover: false
                             },
                             {
                                 answers: [ 'wait', 'c', '3' ],
-                                result: "<p>You <strong>wait</strong> for the lads to arrive and approach Mr. Farron. However, <a href=\"http://www.bbc.co.uk/news/election-2015-32601281\" class=\"ref\" target=\"blank\">just like in the last election</a>, your high numbers don’t seem to count for much and he easily overpowers you and your gang. As he takes off in your transit van, you concede he made a strong opposition.</p><p>You never cast your vote, the Liberal Democrats get elected via a majority, keep the UK in Europe and the foreman hires a Pole in the position your hospitalisation left vacant.</p>",
+                                result: "<p>You <strong>wait</strong> for the lads to arrive and approach Mr. Farron. However, <a href=\"http://www.bbc.co.uk/news/election-2015-32601281\" class=\"ref\" target=\"blank\">just like in the last election</a>, your high numbers don&rsquo;t seem to count for much and he easily overpowers you and your gang. As he takes off in your transit van, you concede he made a strong opposition.</p><p>You never cast your vote, the Liberal Democrats get elected via a majority, keep the UK in Europe and the foreman hires a Pole in the position your hospitalisation left vacant.</p>",
                                 gameover: true
                             },
                             {
@@ -308,16 +308,16 @@
                     {
                         replies: [
                             {
-                                result: "<p>Your heart leads you to the <strong>Green</strong> party. As a voting incentive, you’re given an <strong>organic courgette</strong>. Just need some tofu now and that’s Friday’s dinner party sorted.</p><p>You start towards the car park where you left your Nissan Leaf, as you'll be heading to the polling station.</p>",
+                                result: "<p>Your heart leads you to the <strong>Green</strong> party. As a voting incentive, you&rsquo;re given an <strong>organic courgette</strong>. Just need some tofu now and that&rsquo;s Friday&rsquo;s dinner party sorted.</p><p>You start towards the car park where you left your Nissan Leaf, as you'll be heading to the polling station.</p>",
                             }
                         ]
                     },
                     {
-                        question: "<p>You enter the car park to find your Nissan Leaf on bricks. You’ve always regretted trading your bicycle in, but that’s <a href=\"https://www.thetimes.co.uk/article/marr-is-snubbed-for-a-day-at-church-9ds5783n35h\" class=\"ref\" target=\"blank\">Corbyn’s thing</a> now.</p><p>Nearby, <strong>Paul Nuttall</strong> is addressing a crowd. The raised platform he’s standing on is clearly propped up on your wheels.</p><p>Do you <a class=\"prefill\">attack</a> him, call upon your <a class=\"prefill\">woodland friends</a>, or <a class=\"prefill\">reprimand</a> Mr. Nuttall?</p>",
+                        question: "<p>You enter the car park to find your Nissan Leaf on bricks. You&rsquo;ve always regretted trading your bicycle in, but that&rsquo;s <a href=\"https://www.thetimes.co.uk/article/marr-is-snubbed-for-a-day-at-church-9ds5783n35h\" class=\"ref\" target=\"blank\">Corbyn&rsquo;s thing</a> now.</p><p>Nearby, <strong>Paul Nuttall</strong> is addressing a crowd. The raised platform he&rsquo;s standing on is clearly propped up on your wheels.</p><p>Do you <a class=\"prefill\">attack</a> him, call upon your <a class=\"prefill\">woodland friends</a>, or <a class=\"prefill\">reprimand</a> Mr. Nuttall?</p>",
                         replies: [
                             {
                                 answers: [ 'attack', 'a', '1' ],
-                                result: "<p>You approach Mr. Nuttall to <strong>attack</strong> him. You swing your fist with the goal of knocking him unconscious. However your vegan diet has severely weakened your muscles and he barely even acknowledges the contact.</p><p>Footage of the incident is shared among alt-right news sites with the title “BRAVE speech TRIGGERS SJW to VIOLENT ATTACK!” By the time you get your wheels back, it’s too late to vote. The Conservatives get re-elected via a majority, your boss fires you, and you can’t find any food at the food bank without meat in it.</p>",
+                                result: "<p>You approach Mr. Nuttall to <strong>attack</strong> him. You swing your fist with the goal of knocking him unconscious. However your vegan diet has severely weakened your muscles and he barely even acknowledges the contact.</p><p>Footage of the incident is shared among alt-right news sites with the title “BRAVE speech TRIGGERS SJW to VIOLENT ATTACK!” By the time you get your wheels back, it&rsquo;s too late to vote. The Conservatives get re-elected via a majority, your boss fires you, and you can&rsquo;t find any food at the food bank without meat in it.</p>",
                                 gameover: true
                             },
                             {
@@ -332,7 +332,7 @@
                             },
                             {
                                 answers: [ 'use item', 'organic courgette', 'use organic courgette', 'use courgette', 'courgette' ],
-                                result: "<p>You offer your <strong>organic courgette</strong> to Mr. Nuttall, explaining that it could make a sturdy replacement as a prop for the stage due to its excellent genetics. He looks blankly at it, suggesting this might be the first marrow he’s ever seen, but after a while he sees his own reflection in it and agrees to make the trade. You reattach your wheels and continue on your way.</p>",
+                                result: "<p>You offer your <strong>organic courgette</strong> to Mr. Nuttall, explaining that it could make a sturdy replacement as a prop for the stage due to its excellent genetics. He looks blankly at it, suggesting this might be the first marrow he&rsquo;s ever seen, but after a while he sees his own reflection in it and agrees to make the trade. You reattach your wheels and continue on your way.</p>",
                                 itemRequired: 'organic courgette',
                                 gameover: false
                             }
@@ -358,7 +358,7 @@
                             },
                             {
                                 answers: [ 'use item', 'organic courgette', 'use organic courgette', 'use courgette', 'courgette' ],
-                                result: "<p>You run to the pedestal and belt out &ldquo;<a href=\"https://www.youtube.com/watch?v=GibiNy4d4gc\" class=\"ref\" target=\"_blank\"><em>Naaaaants</em> ingon<em>yaaa</em>ma bagithi <em>Baba!</em></a>&rdquo; holding the <strong>organic courgette</strong> aloft like Rafiki holding Simba in <em>The Lion King.</em></p><p>The crowd is stunned. Mrs. May is paralysed into a stupor. You looked like a bit of a wally, but who’s going to remember what Mrs. May was saying now? You retire the courgette, having fulfilled its greater purpose.</p><p>You get back in the car feeling smug and head to the polling station.</p>",
+                                result: "<p>You run to the pedestal and belt out &ldquo;<a href=\"https://www.youtube.com/watch?v=GibiNy4d4gc\" class=\"ref\" target=\"_blank\"><em>Naaaaants</em> ingon<em>yaaa</em>ma bagithi <em>Baba!</em></a>&rdquo; holding the <strong>organic courgette</strong> aloft like Rafiki holding Simba in <em>The Lion King.</em></p><p>The crowd is stunned. Mrs. May is paralysed into a stupor. You looked like a bit of a wally, but who&rsquo;s going to remember what Mrs. May was saying now? You retire the courgette, having fulfilled its greater purpose.</p><p>You get back in the car feeling smug and head to the polling station.</p>",
                                 itemRequired: 'organic courgette',
                                 gameover: false
                             }
@@ -397,7 +397,7 @@
                     {
                         replies: [
                             {
-                                result: "<p>Your heart leads you to the Scottish National Party. As a voting incentive, you are given a fetching tartan-patterned pair of <strong>scissors</strong>.</p><p>With spirit and determination, you set out across the Highlands towards the polling station.</p>",
+                                result: "<p>Your heart leads you to the Scottish National Party. As a voting incentive, you are given a fetching saltire-clad pair of <strong>scissors</strong>.</p><p>With spirit and determination, you set out across the Highlands towards the polling station.</p>",
                             }
                         ]
                     },
@@ -406,7 +406,7 @@
                         replies: [
                             {
                                 answers: [ 'ignore', 'a', '1' ],
-                                result: "<p>You outwardly <strong>ignore</strong> Mrs. May’s blatant insult, and pensively fix your gaze on the moor in front of you.</p><p>Years pass. Humans from a future civilisation discover your calcified remains. You never cast your vote, the Conservatives are elected via a majority, and unify Great Britain under the name <em>Blutopia</em>.</p>",
+                                result: "<p>You outwardly <strong>ignore</strong> Mrs. May&rsquo;s blatant insult, and pensively fix your gaze on the moor in front of you.</p><p>Years pass. Humans from a future civilisation discover your calcified remains. You never cast your vote, the Conservatives are elected via a majority, and unify Great Britain under the name <em>Blutopia</em>.</p>",
                                 gameover: true
                             },
                             {
@@ -415,13 +415,39 @@
                                 gameover: false
                             },
                             {
-                                answers: [ 'cry freedom', 'c', '3', 'freedom' ],
-                                result: "<p>You puff out your chest and <strong>cry freedom</strong>. The words echo around the valley, alerting the clans who form up in your aid. An intimidated Mrs. May flees, unable to withstand the power of your combined spirit. After erecting a monument to mark the event, you leave the clansmen and women and go forth into the heath.</p>",
+                                answers: [ 'contend', 'c', '3' ],
+                                result: "<p>You <strong>contend</strong> Mrs. May’s statement.</p>",
                                 gameover: false
                             },
                             {
                                 answers: [ 'use item', 'scissors', 'use scissors', 'use pair of scissors', 'pair of scissors' ],
-                                result: "<p>You pull out your <strong>scissors</strong>. Stooping to the ground, you cut a Scotch thistle and present it to Mrs. May with a warning: &ldquo;<a href=\"https://en.wikipedia.org/wiki/Nemo_me_impune_lacessit\" class=\"ref\" target=\"_blank\">Wha daur meddle wi' me?</a>&rdquo;</p><p>She is clearly intimidated, but opportunistically snatches the scissors from you&mdash;probably to make more benefit cuts&mdash;before power-walking away. You descend down the mountainside and venture out into the heath.</p>",
+                                result: "<p>You pull out your <strong>scissors</strong>. Stooping to the ground, you cut a Scotch thistle and present it to Mrs. May with a warning: &ldquo;<a href=\"https://en.wikipedia.org/wiki/Nemo_me_impune_lacessit\" class=\"ref\" target=\"_blank\">Wha daur meddle wi' me?</a>&rdquo;</p><p>She is clearly intimidated, but opportunistically snatches the scissors from you&mdash;probably to make more benefit cuts&mdash;and power-walks away. You descend down the mountainside and venture out into the heath.</p>",
+                                itemRequired: 'scissors',
+                                gameover: false
+                            }
+                        ]
+                    },
+                    {
+                        question: "<p>You reach a golf course. A large helicopter descends and out climbs <strong>President Donald Trump</strong>. You still haven&rsquo;t let go of your offence at him suggesting Scotland was <a href=\"https://twitter.com/realDonaldTrump/status/746272130992644096\" class=\"ref\" target=\"blank\">pleased about the referendum result</a> (despite having already called him a &ldquo;custard-flavoured dobby&rdquo; on Twitter).<p>Do you <a class=\"prefill\">leave</a> the party and go with the Independent candidate, or <a class=\"prefill\">remain</a> with the Conservatives?</p>",
+                        replies: [
+                            {
+                                answers: [ 'attack', 'a', '1' ],
+                                result: "<p></p>",
+                                gameover: true
+                            },
+                            {
+                                answers: [ 'protest', 'b', '2' ],
+                                result: "<p></p>",
+                                gameover: false
+                            },
+                            {
+                                answers: [ 'cry freedom', 'c', '3' ],
+                                result: "<p>You puff out your chest and <strong>cry freedom</strong>. The words echo around the valley, alerting the clans who form up in your aid. Unable to withstand the power of your combined spirit, an intimidated President Trump flees, narrowly avoiding the offshore wind turbines in his helicopter. After erecting a monument to mark the event, you leave the clansmen and women and go forth towards the polling station.</p>",
+                                gameover: false
+                            },
+                            {
+                                answers: [ 'use item', 'scissors', 'use scissors', 'use pair of scissors', 'pair of scissors' ],
+                                result: "<p></p>",
                                 itemRequired: 'scissors',
                                 gameover: false
                             }
@@ -594,7 +620,7 @@
                     name = response;
                 }
 
-                query.html( '<p>While you\'re walking through your constituency, you spy a crowd of dishevelled political activists behind trestle tables in the village green. It looks like they’ve been standing there since the last election.</p>' );
+                query.html( '<p>While you\'re walking through your constituency, you spy a crowd of dishevelled political activists behind trestle tables in the village green. It looks like they&rsquo;ve been standing there since the last election.</p>' );
 
                 // Check if user has a rude name
                 if ( $.inArray( name, dirtyNames ) !== -1 ) {
