@@ -573,9 +573,6 @@ input {
     border: none;
     background-color: #eee;
     padding: 10px 100px 10px 15px;
-    background-image: url("../imgs/enter-key-arrow.png");
-    background-repeat: no-repeat;
-    background-position: right;
 }
 
 #input:focus {
