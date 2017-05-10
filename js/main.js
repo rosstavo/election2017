@@ -783,6 +783,9 @@
 
                 title.addClass( 'title-reduced' );
 
+                // We don't want any non-alphanumeric characters. Why? Cause I said so
+                response = response.replace(/[^\w\s]/gi, '');
+
                 // Define user name
                 if ( response === "" || !/\S/.test( response ) ) {
                     name = "Anonymous Voter";
