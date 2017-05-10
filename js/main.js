@@ -614,6 +614,12 @@
             }
         }
 
+
+        /**
+         * Turn autocomplete off on input
+         */
+        $(window).scrollTop(0);
+
         /**
          * Turn autocomplete off on input
          */

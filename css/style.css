@@ -443,7 +443,13 @@ body {
     font-family: 'cardea', serif;
     line-height: 1.6;
     color: #333;
-    font-size: 20px;
+    font-size: 16px;
+}
+
+@media all and ( min-width: 520px ) {
+    body {
+        font-size: 20px;
+    }
 }
 
 .main {
@@ -578,6 +584,18 @@ input {
 #input:focus {
     outline: none;
     background-color: #f3f3f3;
+}
+
+#input,
+#next {
+    height: 42px;
+}
+
+@media all and ( min-width: 520px ) {
+    #input,
+    #next {
+        height: 47px;
+    }
 }
 
 #submit {
