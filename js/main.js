@@ -214,7 +214,7 @@
                         ]
                     },
                     {
-                        question: "<p>You finally arrive at the polling station. <strong>Theresa May</strong> is stood there awkwardly by herself. You ignore her too and go chat to your local Conservative candidate.</p><p>After a few words you realise you've made an awful mistake. Do you <a class=\"prefill\">leave</a> the party and go with the Independent candidate, or <a class=\"prefill\">remain</a> with the Conservatives?</p>",
+                        question: "<p>You finally arrive at the polling station and go chat to your local Conservative candidate.</p><p>After a few words you realise you've made an awful mistake. Do you <a class=\"prefill\">leave</a> the party and go with the Independent candidate, or <a class=\"prefill\">remain</a> with the Conservatives?</p>",
                         replies: [
                             {
                                 answers: [ 'leave', 'a', '1' ],
