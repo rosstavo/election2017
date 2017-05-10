@@ -1,0 +1,5 @@
+{
+    "require": {
+        "hassankhan/config": "^0.10.0"
+    }
+}

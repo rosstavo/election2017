@@ -30,6 +30,8 @@
             response = "",
             item = "",
             mugwump = false,
+            game = [],
+            csrf = $( '#csrf_token' ).val(),
             dirtyNames = ["4r5e", "5h1t", "5hit", "a55", "anal", "anus", "ar5e", "arrse", "arse", "ass", "ass-fucker", "asses", "assfucker", "assfukka", "asshole", "assholes", "asswhole", "a_s_s", "b!tch", "b00bs", "b17ch", "b1tch", "ballbag", "balls", "ballsack", "bastard", "beastial", "beastiality", "bellend", "bestial", "bestiality", "bi+ch", "biatch", "bitch", "bitcher", "bitchers", "bitches", "bitchin", "bitching", "bloody", "blow job", "blowjob", "blowjobs", "boiolas", "bollock", "bollok", "boner", "boob", "boobs", "booobs", "boooobs", "booooobs", "booooooobs", "boooooooobs", "breasts", "buceta", "bugger", "bum", "bunny fucker", "butt", "butthole", "buttmuch", "buttplug", "c0ck", "c0cksucker", "carpet muncher", "cawk", "chink", "cipa", "cl1t", "clit", "clitoris", "clits", "cnut", "cock", "cock-sucker", "cockface", "cockhead", "cockmunch", "cockmuncher", "cocks", "cocksuck", "cocksucked", "cocksucker", "cocksucking", "cocksucks", "cocksuka", "cocksukka", "cok", "cokmuncher", "coksucka", "coon", "cox", "crap", "cum", "cummer", "cumming", "cums", "cumshot", "cunilingus", "cunillingus", "cunnilingus", "cunt", "cuntlick", "cuntlicker", "cuntlicking", "cunts", "cyalis", "cyberfuc", "cyberfuck", "cyberfucked", "cyberfucker", "cyberfuckers", "cyberfucking", "d1ck", "damn", "dick", "dickhead", "dicks", "dildo", "dildos", "dink", "dinks", "dirsa", "dlck", "dog-fucker", "doggin", "dogging", "donkeyribber", "doosh", "duche", "dyke", "ejaculate", "ejaculated", "ejaculates", "ejaculating", "ejaculatings", "ejaculation", "ejakulate", "f u c k", "f u c k e r", "f4nny", "fag", "fagging", "faggitt", "faggot", "faggs", "fagot", "fagots", "fags", "fanny", "fannyflaps", "fannyfucker", "fanyy", "fatass", "fcuk", "fcuker", "fcuking", "feck", "fecker", "felching", "fellate", "fellatio", "fingerfuck", "fingerfucked", "fingerfucker", "fingerfuckers", "fingerfucking", "fingerfucks", "fistfuck", "fistfucked", "fistfucker", "fistfuckers", "fistfucking", "fistfuckings", "fistfucks", "flange", "fook", "fooker", "fuck", "fucka", "fucked", "fucker", "fuckers", "fuckhead", "fuckheads", "fuckin", "fucking", "fuckings", "fuckingshitmotherfucker", "fuckme", "fucks", "fuckwhit", "fuckwit", "fudge packer", "fudgepacker", "fuk", "fuker", "fukker", "fukkin", "fuks", "fukwhit", "fukwit", "fux", "fux0r", "f_u_c_k", "gangbang", "gangbanged", "gangbangs", "gaylord", "gaysex", "goatse", "God", "god-dam", "god-damned", "goddamn", "goddamned", "hardcoresex", "hell", "heshe", "hoar", "hoare", "hoer", "homo", "hore", "horniest", "horny", "hotsex", "jack-off", "jackoff", "jap", "jerk-off", "jism", "jiz", "jizm", "jizz", "kawk", "knob", "knobead", "knobed", "knobend", "knobhead", "knobjocky", "knobjokey", "kock", "kondum", "kondums", "kum", "kummer", "kumming", "kums", "kunilingus", "l3i+ch", "l3itch", "labia", "lust", "lusting", "m0f0", "m0fo", "m45terbate", "ma5terb8", "ma5terbate", "masochist", "master-bate", "masterb8", "masterbat*", "masterbat3", "masterbate", "masterbation", "masterbations", "masturbate", "mo-fo", "mof0", "mofo", "mothafuck", "mothafucka", "mothafuckas", "mothafuckaz", "mothafucked", "mothafucker", "mothafuckers", "mothafuckin", "mothafucking", "mothafuckings", "mothafucks", "mother fucker", "motherfuck", "motherfucked", "motherfucker", "motherfuckers", "motherfuckin", "motherfucking", "motherfuckings", "motherfuckka", "motherfucks", "muff", "mutha", "muthafecker", "muthafuckker", "muther", "mutherfucker", "n1gga", "n1gger", "nazi", "nigg3r", "nigg4h", "nigga", "niggah", "niggas", "niggaz", "nigger", "niggers", "nob", "nob jokey", "nobhead", "nobjocky", "nobjokey", "numbnuts", "nutsack", "orgasim", "orgasims", "orgasm", "orgasms", "p0rn", "pawn", "pecker", "penis", "penisfucker", "phonesex", "phuck", "phuk", "phuked", "phuking", "phukked", "phukking", "phuks", "phuq", "pigfucker", "pimpis", "piss", "pissed", "pisser", "pissers", "pisses", "pissflaps", "pissin", "pissing", "pissoff", "poop", "porn", "porno", "pornography", "pornos", "prick", "pricks", "pron", "pube", "pusse", "pussi", "pussies", "pussy", "pussys", "rectum", "retard", "rimjaw", "rimming", "s hit", "s.o.b.", "sadist", "schlong", "screwing", "scroat", "scrote", "scrotum", "semen", "sex", "sh!+", "sh!t", "sh1t", "shag", "shagger", "shaggin", "shagging", "shemale", "shi+", "shit", "shitdick", "shite", "shited", "shitey", "shitfuck", "shitfull", "shithead", "shiting", "shitings", "shits", "shitted", "shitter", "shitters", "shitting", "shittings", "shitty", "skank", "slut", "sluts", "smegma", "smut", "snatch", "son-of-a-bitch", "spac", "spunk", "s_h_i_t", "t1tt1e5", "t1tties", "teets", "teez", "testical", "testicle", "tit", "titfuck", "tits", "titt", "tittie5", "tittiefucker", "titties", "tittyfuck", "tittywank", "titwank", "tosser", "turd", "tw4t", "twat", "twathead", "twatty", "twunt", "twunter", "v14gra", "v1gra", "vagina", "viagra", "vulva", "w00se", "wang", "wank", "wanker", "wanky", "whoar", "whore", "willies", "willy", "xrated", "xxx"];
             intro = "<p>You see <a class=\"prefill\">Labour</a>, <a class=\"prefill\">Conservative</a>, <a class=\"prefill\">Liberal Democrats</a>, <a class=\"prefill\">UKIP</a>, <a class=\"prefill\">Green</a>, and the <a class=\"prefill\">SNP</a>. Who do you give your vote to?</p><p class=\"tip\"><strong>Tip:</strong> You can click the options to prefill the answer box.</p>";
 
@@ -65,7 +67,7 @@
                             },
                             {
                                 answers: [ 'defect', 'c', '3' ],
-                                result: "<p>Convinced by her argument, you defect to the Conservatives. Besides, [insert compelling reason to switch to Tories here]. Newly liberated to Capitalist ideals, you discard your &ldquo;<a href=\"https://www.thetimes.co.uk/article/marr-is-snubbed-for-a-day-at-church-9ds5783n35h\" class=\"ref\" target=\"blank\">Chairman Mao</a>&rdquo; bicycle and pick up the phone to hire a Limo for the rest of the journey.</p>",
+                                result: "<p>Convinced by her argument, you defect to the Conservatives. Besides, nevermind Tory cuts to the NHS and schools, Corbyn’s actually a bit of a wally isn’t he? Newly liberated to Capitalist ideals, you discard your &ldquo;<a href=\"https://www.thetimes.co.uk/article/marr-is-snubbed-for-a-day-at-church-9ds5783n35h\" class=\"ref\" target=\"blank\">Chairman Mao</a>&rdquo; bicycle and pick up the phone to hire a Limo for the rest of the journey.</p>",
                                 defect: 'conservative',
                                 gameover: false
                             },
@@ -100,6 +102,12 @@
                                 result: "<p>You eat your <strong>school meal</strong> as it&rsquo;s a lot harder to think clearly on an empty stomach.</p><p>&ldquo;Hang on a minute lads, I&rsquo;ve got a great idea,&rdquo; you say. &ldquo;Boris, call the <em>Financial Times</em> and tell them you&rsquo;re going to commission something ridiculous like a <a href=\"http://www.independent.co.uk/news/uk/politics/royal-yacht-britannia-monarchy-boris-johnson-republic-money-a7628416.html\" class=\"ref\" target=\"blank\">Royal Yacht</a>.&rdquo;</p><p>The <em>FT</em> snaps it up and publishes the article, causing the Pound to lose value, which in turn reduces the weight of the cash at the end of the bus allowing it to be retrieved.</p>",
                                 itemRequired: 'school meal',
                                 gameover: false
+                            },
+                            {
+                                answers: [ 'use item', 'money', 'use money' ],
+                                result: "<p>It seems like a simple solution really. &ldquo;Lads, forget about that cash. I have some <strong>money</strong>, and the rest we can just borrow.&rdquo; They nod in agreement, and you give them your money. Once they&rsquo;re gone, you ring Ed Miliband as you know he has a heavy stone you can use to rebalance the bus. You retrieve the cash and go on your way.</p>",
+                                itemRequired: 'money',
+                                gameover: false
                             }
                         ]
                     },
@@ -125,14 +133,14 @@
                             },
                             {
                                 answers: [ 'use item', 'money', 'use money' ],
-                                result: "<p>You use the item.</p>",
+                                result: "<p>Faced with a tough decision and too weary to decide, you choose instead to exit the polling station. You go to the newsagents and spend your <strong>money</strong> on thousands of penny sweets.</p><p>You never cast your vote and the Conservatives get elected via a majority, and ruin the NHS. Eating all the sweets makes you unwell, and you die of a stomach impaction.</p>",
                                 itemRequired: 'money',
                                 gameover: false
                             }
                         ]
                     }
                 ],
-                endresult: "<ul><li>Labour are elected via a majority. Your one vote made the difference!</li><li>All the rich people flee to Switzerland, ruining the economy as banks and companies move abroad, leaving Britain with a GDP similar to Tuvalu.</li><li>Labour renege on their \"No deals\" approach to get Mr. Miliband in power. Scotland hold the government to ransom, cry \"Freedom!\" and Hadrian's Wall is rebuilt. Labour defend this as a fulfillment of their promise to give all hard-working Britons \"good jobs\".</li><li>The Tories are re-elected in 2020 and complain once again about the mess they inherited.</li></ul>"
+                endresult: "<ul>Labour is elected via a majority. Your one vote made the difference!</li><li>The new Labour cabinet decides to back out and stay in the EU, knowing whatever choice they make will antagonise half of its voters regardless—which it does. Meanwhile due to increased corporation tax rates, Starbucks closes all UK branches, disaffecting the other half of Labour voters.</li><li>The government overspends on its manifesto, plunges the country further into debt, and Jeremy Corbyn enrols in a <a href=\"https://www.capmoney.org/\" class=\"ref\" target=\"blank\">CAP Money</a> course.</li><li>Mr. Corbyn scraps Trident and disposes of all lethal weapons. Sensing their time to strike, the country is taken over by the foxes, who begin hunting humans in retribution.</ul>"
             },
             'conservative' : {
                 names: [ 'conservative', 'conservatives', 'conservative party', 'tory', 'tories', 'theresa may', 'teresa may', 'may', 'c', 'con', 'cons', 'conse', 'conser', 'conserv', 'conserva', 'conservat', 'conservati', '2' ],
@@ -147,11 +155,11 @@
                         ]
                     },
                     {
-                        question: "<p>As you wait for Sebastien to appear, <strong>Nigel Farage</strong> saunters out of The Dog &amp; Duck with a pint. He spots your Tory rosette and walks over. \"I see you're voting Conservative,\" he says. \"Why not go all the way to the right?\"</p><p>Do you <a class=\"prefill\">ignore</a>, <a class=\"prefill\">run</a>, or <a class=\"prefill\">defect</a>?</p>",
+                        question: "<p>As you&rsquo;re waiting for Sebastien to appear, Jeremy Corbyn rides by on his bicycle. He spots your blue rosette and pulls over.  &ldquo;I see you’re voting Conservative,&rdquo; he says. &ldquo;Wouldn&rsquo;t you rather have a government for the many, not the few?&rdquo;</p><p>Do you <a class=\"prefill\">ignore</a>, <a class=\"prefill\">run</a>, or <a class=\"prefill\">defect</a>?</p>",
                         replies: [
                             {
                                 answers: [ 'ignore', 'a', '1' ],
-                                result: "<p>You choose to <strong>ignore</strong> Mr. Farage. Besides, Sebastien is a migrant (it's actually Sébastien) and you rather like him. Frustrated at getting no response, Mr. Farage moves away to a pair of smokers sitting outside the pub. At that moment, the Rolls pulls up.</p>",
+                                result: "<p>You <strong>ignore</strong> Jeremy Corbyn, remembering he is an essentially benign Islingtonian herbivore. Frustrated at getting no response, Mr. Corbyn moves away to a pair of working class vapers sitting outside the pub. At that moment, the Rolls pulls up.</p>",
                                 gameover: false
                             },
                             {
@@ -161,9 +169,15 @@
                             },
                             {
                                 answers: [ 'defect', 'c', '3' ],
-                                result: "<p>You decide to <strong>defect</strong>. After all, you never really liked your migrant driver Sebastien (his name is actually Sébastien). You call off the car and instead ring Keith, who built your conservatory. He picks you up in his white Transit van, and you both head to the polling station, via the car wash.</p>",
+                                result: "<p>Convinced by his argument, you <strong>defect</strong> to Labour. Besides, you have a severe allergy to cress, and <em>Heaven forbid</em> you eat the wrong sandwich at Julian’s birthday tea party like last year and have to rely on the NHS to treat you. You pop into Halfords to buy a bicycle and head on your way.</p>",
                                 gameover: false,
-                                defect: 'ukip'
+                                defect: 'labour'
+                            },
+                            {
+                                answers: [ 'use item', 'money', 'use money' ],
+                                result: "<p>You offer Mr. Corbyn your <strong>money</strong> to go away. He seems pretty desperate to find the cash needed to fund his manifesto, and gleefully takes it. You can’t resist a parting blow. &ldquo;Don&rsquo;t let <a href=\"http://www.bbc.co.uk/news/election-2017-39775693\" class=\"ref\" target=\"blank\">Diane Abbott</a> count it eh? Ha-hah!&rdquo;</p><p>He cycles off with a scowl.</p>",
+                                itemRequired: 'money',
+                                gameover: false
                             }
                         ]
                     },
@@ -190,6 +204,12 @@
                                 result: "<p>The only way you&rsquo;ll get a proper repair is if you splash a bit of <strong>money</strong>, so you ring up <strong>Elon Musk</strong> who agrees to repair Mrs. May. All seems to be functioning normally, except now she has a blind-spot for <a href=\"https://www.theguardian.com/technology/2016/jun/30/tesla-autopilot-death-self-driving-car-elon-musk\" class=\"ref\" target=\"blank\">white vehicles joining her lane</a>. It&rsquo;s probably <a href=\"http://www.thenational.scot/news/15226300.Scottish_Tories_engulfed_in_racism_scandal_with_at_least_seven_council_candidates_now_in_the_spotlight/\" class=\"ref\" target=\"blank\">nothing to worry about</a>.</p>",
                                 itemRequired: 'money',
                                 gameover: false
+                            },
+                            {
+                                answers: [ 'use item', 'school meal', 'use school meal' ],
+                                result: "<p>You still have your <strong>school meal</strong> left over, which you offer to Mrs. May. Turns out she was just really hungry. You can empathise, from that time you had to use food banks. You leave the newly reinvigorated Mrs. May and head to the polling station.</p>",
+                                itemRequired: 'school meal',
+                                gameover: false
                             }
                         ]
                     },
@@ -211,6 +231,12 @@
                                 answers: [ 'use item', 'money', 'use money' ],
                                 result: "<p>Faced with a tough decision and too weary to decide, you choose instead to exit the polling station. You go to the newsagents and spend your <strong>money</strong> on thousands of penny sweets.</p><p>You never cast your vote, Labour gets elected via a majority, and ends private ownership of pets. Eating all the sweets makes you unwell, but as Labour have added four new bank holidays, the hospital is closed. You die of a stomach impaction.</p>",
                                 itemRequired: 'money',
+                                gameover: true
+                            },
+                            {
+                                answers: [ 'use item', 'school meal', 'use school meal' ],
+                                result: "<p>Faced with a tough decision and too weary to decide, you choose instead to exit the polling station. You sit on the polling station steps and eat your bland <strong>school meal</strong>.</p><p>You never cast your vote, Labour gets elected via a majority, and ends private ownership of pets. The school meal makes you feel unwell, but as Labour have added four new bank holidays, the hospital is closed. You die of food poisoning.</p>",
+                                itemRequired: 'school meal',
                                 gameover: true
                             }
                         ]
@@ -257,26 +283,26 @@
                         ]
                     },
                     {
-                        question: "<p></p>",
+                        question: "<p>As you park up, a man approaches you. &ldquo;You&rsquo;re absolute disgrace!&rdquo; he says. He must have seen your Liberal Democrat badge.</p><p>Do you <a class=\"prefill\">call him matey</a>, give him an <a class=\"prefill\">awkward kiss</a> on the cheek, or invite him to <a class=\"prefill\">smell your spaniel</a>?</p>",
                         replies: [
                             {
-                                answers: [ 'confront', 'a', '1' ],
-                                result: "<p></p>",
+                                answers: [ 'call him matey', 'matey', 'a', '1' ],
+                                result: "<p>This sort of situation calls for your personable centrist charm, so you reply, &ldquo;Hello <strong>matey</strong>! Why am I a disgrace, mi&rsquo;old China?&rdquo; Keep up that flawless disguise, and he might mistake you for a fellow member of the working class.</p><p>&ldquo;You’ve parked in front of my drive,&rdquo; he explains. <em>Whoops</em>&mdash;you’d just assumed it was a political thing from past experience. You hastily apologise and park further down the road.</p>",
                                 gameover: false
                             },
                             {
-                                answers: [ 'attack', 'b', '2' ],
-                                result: "<p></p>",
-                                gameover: false
-                            },
-                            {
-                                answers: [ 'wait', 'c', '3' ],
-                                result: "<p></p>",
+                                answers: [ 'awkward kiss', 'kiss', 'b', '2' ],
+                                result: "<p>You can&rsquo;t stand conflict, so you attempt to dispel the confrontation with an <strong><a href=\"http://www.express.co.uk/news/uk/799786/Lib-Dem-leader-Tim-Farron-kisses-Brexit-voter-Oxfordshire-Theresa-May-Brussels-EU\" class=\"ref\" target=\"blank\">awkward kiss</a></strong> on the man’s cheek. He immediately lamps you, knocking you out.</p><p>You never cast your vote, the Conservatives get re-elected via a landslide majority, and they ruin the NHS, so you can't get treated. You die after waiting a week in A&E with no water.</p>",
                                 gameover: true
                             },
                             {
+                                answers: [ 'smell your spaniel', 'spaniel', 'smell my spaniel', 'c', '3' ],
+                                result: "<p>You panic and flounder about thinking of things Tim Farron might say in the situation.  &ldquo;Uuh&mdash;<strong><a href=\"http://www.newstatesman.com/politics/june2017/2017/04/tim-farron-being-unfairly-maligned-inviting-us-smell-his-spaniel\" class=\"ref\" target=\"blank\">Smell my spaniel</a></strong>&hellip;?&rdquo;</p><p>Too late now, you’ve verbalised it. You don&rsquo;t even own a dog. He seems just as baffled, so you leg it while he’s stupefied.</p>",
+                                gameover: false
+                            },
+                            {
                                 answers: [ 'use item', 'straight banana', 'use straight banana', 'use banana', 'banana' ],
-                                result: "<p></p>",
+                                result: "<p>You engage the man in a discussion about the EU. Once you demonstrate how <a href=\"http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31994R2257:EN:HTML\" class=\"ref\" target=\"blank\">aesthetically pleasing</a> and tasty the <strong>straight banana</strong> is, his whole Brexit argument collapses. Now unimpeded, you can head to the polling station.</p>",
                                 itemRequired: 'straight banana',
                                 gameover: false
                             }
@@ -311,7 +337,7 @@
                         ]
                     }
                 ],
-                endresult: "<ul><li>The Liberal Democrats are elected via a majority. Your one vote made the difference!</li><li>As his first move in power, Mr. Clegg railroads a bill for proportional representation, which backfires when polls show the Monster Raving Loony Party held a silent majority.</li><li>As part of their fairness agenda, the Lib Dems open up the House of Lords and national treasure James Corden becomes the first elected member.</li><li>Danny Alexander bets the country's whole pension budget on a horse in the Grand National, and loses. The economy collapses and the unfortunate horse, who literally fell at the last hurdle, is put down.</li></ul>"
+                endresult: "<ul><li>The Liberal Democrats are elected via a majority. Your one vote made the difference!</li><li>The new government attempts to repeal Article 50, however is forced to adopt the Euro as its currency as part of a list of terms Brussels draws up out of spite for wasting its time. The treasury loses £1.5 billion (&euro;1.78 billion) on now-useless new £1 coins.</li><li>Mr. Farron calls an end to first-past-the-post, instead implementing a Eurovision-style voting system after seeing it work so well in 2016 (it really keeps the suspense right until the last moment). David Dimbleby is replaced for future overnight election specials by Graham Norton.</li><li>After all that effort, the EU collapses anyway.</li></ul>"
             },
             'ukip' : {
                 names: [ 'ukip', 'united kingdom independence party', 'uk independence party', 'racists', 'uk', 'uki', '4' ],
@@ -401,7 +427,7 @@
                         ]
                     }
                 ],
-                endresult: "<ul><li>UKIP are elected via a majority. Your one vote made the difference!</li><li>All EU migrants are chucked out of Britain, bringing various workforces (most notably the NHS) to a standstill, leading to thousands of easily treatable deaths, including that of Mr. Farage after he drinks too many pints, gets cirrhosis and dies.</li><li>The nation descends into anarchy as all UKIP candidates up for replacing him talk disparagingly about 'darkies' in their manifestos, leading to riots in Birmingham, Bradford, London and Leicester. The UKIP cabinet move the capital of the UK to Clacton-on-Sea for safety, but an angry mob of Essex scum raze the new capital in a rage, thinking 'darkie' refers to them after a quick session on a sunbed.</li></ul>"
+                endresult: "<ul><li>UKIP are elected via a majority. Your one vote made the difference!</li><li>As his first act in power, Mr. Nuttall reintroduces the poll tax, only this time just for Poles.</li><li>All other EU migrants are chucked out of Britain, bringing various workforces (most notably the NHS) to a standstill, leading to thousands of easily treatable deaths, including that of Mr. Nuttall who dies of exposure while campaigning in Skegness.</li><li>Everyone dies of dysentery after public toilets overflow into the streets.</li></ul>"
             },
             'green' : {
                 names: [ 'green', 'green party', 'greens', 'g', 'gr', 'gre', 'gree', '5' ],
@@ -500,7 +526,7 @@
                     {
                         replies: [
                             {
-                                result: "<p>Your heart leads you to the Scottish National Party. As a voting incentive, you are given a fetching saltire-clad pair of <strong>scissors</strong>.</p><p>With spirit and determination, you set out across the Highlands towards the polling station.</p>",
+                                result: "<p>Your heart leads you to the Scottish National Party. As a voting incentive, you are given an oversized saltire-clad pair of <strong>scissors</strong>.</p><p>With spirit and determination, you set out across the Highlands towards the polling station.</p>",
                             }
                         ]
                     },
@@ -509,17 +535,17 @@
                         replies: [
                             {
                                 answers: [ 'ignore', 'a', '1' ],
-                                result: "<p>You outwardly <strong>ignore</strong> Mrs. May&rsquo;s blatant insult, and pensively fix your gaze on the moor in front of you.</p><p>Years pass. Humans from a future civilisation discover your calcified remains. You never cast your vote, the Conservatives are elected via a majority, and unify Great Britain under the name <em>Blutopia</em>.</p>",
+                                result: "<p>You outwardly <strong>ignore</strong> Mrs. May&rsquo;s blatant insult, and pensively fix your gaze on the moor in front of you. You&rsquo;re so offended you can’t move.</p><p>Years pass. Humans from a future civilisation discover your calcified remains. You never cast your vote, the Conservatives are elected via a majority, and kill all the poor to save on welfare.</p>",
                                 gameover: true
                             },
                             {
                                 answers: [ 'attack', 'b', '2' ],
-                                result: "<p>You <strong>attack</strong> Mrs. May, unsheathing your claymore and hewing her hiking poles in twain. Suddenly imbalanced, she falls backwards and rolls down the side of the torr.</p><p>You quote <a href=\"http://www.imdb.com/title/tt0112573/quotes?item=qt0440126\" class=\"ref\" target=\"_blank\">William Wallace</a>: “Every man dies, not every man really lives.”</p><p>Indeed.</p>",
+                                result: "<p>You <strong>attack</strong> Mrs. May, unsheathing your claymore and hewing her hiking poles in twain. Suddenly imbalanced, she falls backwards and rolls down the side of the torr.</p><p>You quote <a href=\"http://www.imdb.com/title/tt0112573/quotes?item=qt0440126\" class=\"ref\" target=\"_blank\">William Wallace</a>: &ldquo;Every man dies, not every man really lives.&rdquo;</p><p>Indeed.</p>",
                                 gameover: false
                             },
                             {
                                 answers: [ 'contend', 'c', '3' ],
-                                result: "<p>You <strong>contend</strong> Mrs. May&rsquo;s statement.</p>",
+                                result: "<p>You <strong>contend</strong> Mrs. May&rsquo;s statement. &ldquo;Not so strong and stable to call a snap election in the middle of Brexit negotiations is it now?&rdquo; To add emphasis to your point, you give her a shove and she falls backwards and rolls down the hill. Genius.</p>",
                                 gameover: false
                             },
                             {
@@ -535,7 +561,7 @@
                         replies: [
                             {
                                 answers: [ 'attack', 'a', '1' ],
-                                result: "<p>You decide to <strong>attack</strong> President Trump. However it&rsquo;s obvious you&rsquo;ll just get shot by the secret service if you attack the President head-on, so you get a punnet of golf balls from the driving range and pepper the President and his entourage, who mistake the hurtling balls for hail having been warned about Scotland&rsquo;s inclement weather.</p><p>This turns out to be incredibly cathartic and enjoyable. You&rsquo;re too distracted to cast your vote, the Conservatives are elected via a majority, and unify Great Britain under the name Blutopia.</p>",
+                                result: "<p>You decide to <strong>attack</strong> President Trump. However it&rsquo;s obvious you&rsquo;ll just get shot by the secret service if you attack the President head-on, so you get a punnet of golf balls from the driving range and pepper the President and his entourage, who mistake the hurtling balls for hail having been warned about Scotland&rsquo;s inclement weather.</p><p>This turns out to be incredibly cathartic and enjoyable. You&rsquo;re too distracted to cast your vote, the Conservatives are elected via a majority, and scrap the triple-lock on pensions. You eventually retire at the age of 87.</p>",
                                 gameover: true
                             },
                             {
@@ -550,19 +576,41 @@
                             },
                             {
                                 answers: [ 'use item', 'scissors', 'use scissors', 'use pair of scissors', 'pair of scissors' ],
-                                result: "<p></p>",
+                                result: "<p>As you approach the crowd, you gather President Trump is there to open a new spa. You charge out, <strong>scissors</strong> raised, and slice the ribbon across the entrance. His entourage of secret service agents open fire, but you use your oversized scissors to deflect the bullets. You leg it, discarding the now broken scissors in the brush.</p><p>Meanwhile, <strong>Ben Carson</strong> is ordered by President Trump to hold the ribbon together so he can still pretend to be the one who opened the building. The ribbon falls and everyone applauds.</p>",
                                 itemRequired: 'scissors',
                                 gameover: false
                             }
                         ]
+                    },
+                    {
+                        question: "<p>You finally arrive at the polling station. <strong>Nicola Sturgeon</strong> is there outside to greet you and introduce you to your local SNP candidate.</p><p>After a few words you realise you've made an awful mistake. Do you <a class=\"prefill\">leave</a> the party and go with the Independent candidate, or <a class=\"prefill\">remain</a> with the SNP?</p>",
+                        replies: [
+                            {
+                                answers: [ 'leave', 'a', '1' ],
+                                result: "<p>Like the Massacre of Glencoe, you betray your party and <strong>leave</strong> for your constituency&rsquo;s Independent candidate at the last moment. Your vote hits the bottom of the ballot box. Outside you hear a cockerel crow. Congratulations, you successfully voted!</p>",
+                                defect: 'independent',
+                                gameover: false
+                            },
+                            {
+                                answers: [ 'remain', 'b', '2' ],
+                                result: "<p>You close your eyes, think of the environment, and <strong>remain</strong> true to the Scottish National Party. Your vote hits the bottom of the ballot box. Congratulations, you successfully voted!</p>",
+                                gameover: false
+                            },
+                            {
+                                answers: [ 'use item', 'scissors', 'use scissors' ],
+                                result: "<p>Faced with a tough decision and too weary to decide, you use your <strong>scissors</strong> to cut the ballot paper into confetti.</p><p>Unfortunately each small piece gets counted as a vote for the Conservatives, who win with a landslide majority and scrap the triple-lock on pensions. You eventually retire at the age of 87.</p>",
+                                itemRequired: 'scissors',
+                                gameover: true
+                            }
+                        ]
                     }
                 ],
-                endresult: "<ul><li>The SNP are elected via a majority. Your one vote made the difference!</li></ul>"
+                endresult: "<ul><li>The Scottish National Party wins all the seats in Scotland. Your one vote made the difference!</li><li>You finally get indyref2, but due to 5 public votes in 5 years, caring fatigue strikes Scotland, meaning only 3 people turn out. Thankfully two of those were spoiled ballots, and Scotland gain Independence.</li><li>The UK Conservative government blocks Scotland from using Pound sterling. Nicola Sturgeon draws up plans for a sovereign currency on the back of a fag packet, but loses it shortly before the press conference announcing the new currency, which she ad-libs poorly.</li><li>The economy crashes and Scotland is forced to sell Nessie at a Japanese fish market to make up the deficit.</li></ul>"
             },
             'independent' : {
                 names: [],
                 colour: '#34495e',
-                endresult: "<ul><li>Your Independent candidate is elected. Your one vote made the difference!</li><li>No one party achieves a majority in the Election. Unable to form a parliament, the Queen offers your new MP the job of Prime Minister, which he accepts.</li><li>After enacting some questionable policies (such as solar roadways, outlawing Ska music, and employing the Banker from <em>Deal Or No Deal</em> as the Chancellor), he finally finds his feet, becoming the most beloved Prime Minister since Churchill.</li><li>After 7 consecutive terms, he draws his last breath and dies in office. A gold statue to commemorate him is built in place of the London Eye.</li></ul>"
+                endresult: "<ul><li>Your Independent candidate is elected. Your one vote made the difference!</li><li>No one party achieves a majority in the Election. Unable to form a parliament, the Queen offers your new MP the job of Prime Minister, which he accepts.</li><li>After enacting some questionable policies (such as half-hourly bin collections, cycle paths for every road, and employing the &ldquo;dishy&rdquo; Judge Rinder as Justice Secretary) she finally finds her feet, becoming more universally popular than Margaret Thatcher and replacing her as the yardstick for lazy tabloid comparisons for future women PMs.</li><li>After 7 consecutive terms, she draws her last breath and dies in office. A gold statue to commemorate her is built in place of the London Eye.</li></ul>"
             }
         }
 
@@ -694,6 +742,8 @@
             query.append( "<h1>GAME OVER</h1>" );
 
             retryButton();
+
+            storeGame( game );
         }
 
         $.sanitize = function(input) {
@@ -703,6 +753,17 @@
         				 replace(/<![\s\S]*?--[ \t\n\r]*>/gi, '');
             return output;
         };
+
+        function storeGame( gameData ) {
+            $.ajax({
+                type: 'POST',
+                url: 'app/log.php',
+                data: {
+                    game: JSON.stringify( gameData ),
+                    csrf: csrf
+                }
+            });
+        }
 
         /**
          * updateResponse() function, called every time stage progresses
@@ -720,10 +781,14 @@
                 if ( response === "" || !/\S/.test( response ) ) {
                     name = "Anonymous Voter";
                 } else {
-                    name = response;
+                    name = response.replace(/[^\w\s]/gi, '');
+
+                    if ( name.length > 20 ) {
+                        name = name.substring( 0, 20 );
+                    }
                 }
 
-                query.html( '<p>While you\'re walking through your constituency, you spy a crowd of dishevelled political activists behind trestle tables in the village green. It looks like they&rsquo;ve been standing there since the last election.</p>' );
+                query.html( '<p>While you&rsquo;re walking through your constituency, you spy a crowd of dishevelled political activists behind trestle tables in the village green. It looks like they&rsquo;ve been standing there since the last election.</p>' );
 
                 // Check if user has a rude name
                 if ( $.inArray( name, dirtyNames ) !== -1 ) {
@@ -753,6 +818,7 @@
                     query.prepend( "<p>Thank you, <span class=\"name\"><strong>" + name + "</strong></span>.</p>" );
                 }
 
+                game.push( name );
 
                 // Display next button
                 nextButton();
@@ -812,6 +878,8 @@
 
                     // Display next button
                     nextButton();
+
+                    game.push( party );
                 }
 
             } else if ( stage === 3 || stage === 5 || stage === 7 ) {
@@ -847,7 +915,8 @@
                 var state,
                     error,
                     replies = [],
-                    reply;
+                    reply,
+                    roundData = [];
 
                 // Run through replies for this stage to see if one matches
                 $.each( parties[party].stages[(stage - 2) / 2].replies, function( k, v ) {
@@ -861,6 +930,7 @@
                         return;
                     }
                 } );
+
 
                 // If no state, end game
                 if ( state == null ) {
@@ -915,6 +985,8 @@
                     // Render inventory
                     renderInventory();
 
+                    game.push( response );
+
                     // If gameover state, end game or continue
                     if ( parties[party].stages[(stage - 2) / 2].replies[state].gameover ) {
                         // Game over
@@ -941,13 +1013,19 @@
                 renderInventory();
 
                 // Get people to register to vote
-                query.append( '<hr /><p class="text-center"><em>Note from the author:</em> Thankfully whatever happens, it won\'t be that bad. However to get the best possible outcome for the country this election season, remember to <a href=\"https://www.gov.uk/register-to-vote\" target=\"_blank\">register to vote!</a></p>' );
+                query.append( '<p class="tip"><em>Note from the author:</em> Thankfully whatever happens, it won\'t be that bad. However to get the best possible outcome for the country this election season, remember to <a href=\"https://www.gov.uk/register-to-vote\" target=\"_blank\">register to vote!</a></p>' );
 
                 // Show retry button
                 retryButton();
 
                 // Show footer
                 footer.show();
+
+                // Add final party to gamedata
+                game.push( party );
+
+                // Store gamedata in database
+                storeGame( game );
             };
 
             // If party defined, change colour of elements
