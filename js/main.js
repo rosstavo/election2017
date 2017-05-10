@@ -804,7 +804,7 @@
                     rudeName = true;
 
                     // Thank user
-                    query.prepend( "<p>Well that's original. Fine, if you want to be called <span class=\"name\"><strong>" + name + "</strong></span> then that's your perogative.</p>" );
+                    query.prepend( "<p>Well that's original. Fine, if you want to be called <span class=\"name\"><strong>" + name + "</strong></span> then that's your prerogative.</p>" );
                     query.append( "<p>&ldquo;<span class=\"name\"><strong>" + name + "!</strong></span> <span class=\"name\"><strong>" + name + "!</strong></span>&rdquo; they cry.</p>" );
                 } else {
 
