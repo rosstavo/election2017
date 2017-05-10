@@ -610,7 +610,7 @@
             'independent' : {
                 names: [],
                 colour: '#34495e',
-                endresult: "<ul><li>Your Independent candidate is elected. Your one vote made the difference!</li><li>No one party achieves a majority in the Election. Unable to form a parliament, the Queen offers your new MP the job of Prime Minister, which he accepts.</li><li>After enacting some questionable policies (such as half-hourly bin collections, cycle paths for every road, and employing the &ldquo;dishy&rdquo; Judge Rinder as Justice Secretary) she finally finds her feet, becoming more universally popular than Margaret Thatcher and replacing her as the yardstick for lazy tabloid comparisons for future women PMs.</li><li>After 7 consecutive terms, she draws her last breath and dies in office. A gold statue to commemorate her is built in place of the London Eye.</li></ul>"
+                endresult: "<ul><li>Your Independent candidate is elected. Your one vote made the difference!</li><li>No one party achieves a majority in the Election. Unable to form a parliament, the Queen offers your new MP the job of Prime Minister, which she accepts.</li><li>After enacting some questionable policies (such as half-hourly bin collections, cycle paths for every road, and employing the &ldquo;dishy&rdquo; Judge Rinder as Justice Secretary) she finally finds her feet, becoming more universally popular than Margaret Thatcher and replacing her as the yardstick for lazy tabloid comparisons for future women PMs.</li><li>After 7 consecutive terms, she draws her last breath and dies in office. A gold statue to commemorate her is built in place of the London Eye.</li></ul>"
             }
         }
 
