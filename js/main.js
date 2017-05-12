@@ -593,7 +593,7 @@
                             },
                             {
                                 answers: [ 'remain', 'b', '2' ],
-                                result: "<p>You close your eyes, think of the environment, and <strong>remain</strong> true to the Scottish National Party. Your vote hits the bottom of the ballot box. Congratulations, you successfully voted!</p>",
+                                result: "<p>You close your eyes, think of William Wallace, and <strong>remain</strong> true to the Scottish National Party. Your vote hits the bottom of the ballot box. Congratulations, you successfully voted!</p>",
                                 gameover: false
                             },
                             {

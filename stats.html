@@ -16,7 +16,8 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	<script src="js/stats.js"></script>
 
 	<script src="https://use.typekit.net/zqw5lei.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -44,23 +45,30 @@
 			Election 2017
 		</h3>
 
-		<h1 id="title" class="title">Choose Your Adventure</h1>
+		<h2 id="title" class="title">Choose Your Adventure</h2>
 
-		<div id="query">
-			<p>The clock strikes <a href="http://www.mirror.co.uk/news/politics/enthusiastic-theresa-early-statement-early-10247413" target="_blank" class="ref">11:04am</a> on Tuesday, 18th April 2017. Theresa May appears on the TV like a spectre announcing impending doom, and proposes a &ldquo;snap&rdquo; election, the words making your spine tingle.</p>
-			<p>Oh no. Not this again.</p>
-			<p>You're politically weary, but convicted to exercise your democratic duty, so you register to vote. What <strong>name</strong> do you enter?</p>
+		<div id="stats">
+			<a href="index.html">&larr; Go back</a>
+			<div class="statistic highlighted-statistic">
+				<p class="statistic-label">Total Games:</p>
+				<h1 class="statistic-figure" id="total">&mdash;</h1>
+				<p>Survived: <span class="statistic-figure" id="died">&mdash;</span> &bull; Died: <span class="statistic-figure" id="survived">&mdash;</span></p>
+			</div>
+			<div class="statistic">
+				<canvas id="start-party-chart" width="400" height="400"></canvas>
+			</div>
+			<div class="statistic">
+				<canvas id="end-party-chart" width="400" height="400"></canvas>
+			</div>
+			<div class="statistic">
+				<canvas id="defected-party-chart" width="400" height="400"></canvas>
+			</div>
+			<div class="statistic">
+				<canvas id="rude-chart" width="400" height="400"></canvas>
+			</div>
+			<p><small>Last updated: <span id="updated">&mdash;</span></small></p>
+			<a href="index.html">&larr; Go back</a>
 		</div>
-
-		<div class="buttons">
-			<input id="input" type="text" class="first-input" placeholder="Type a name" autofocus>
-			<input id="next" type="button" value="&rarr;">
-			<input id="reload" type="button" value="Retry?" onclick="window.location.reload()">
-		</div>
-
-		<div id="inventory"></div>
-
-		<div id="error-message"></div>
 
 		<nav class="site-navigation">
 			<ul id="menu" class="menu">

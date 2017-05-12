@@ -634,7 +634,8 @@ input {
     color: white;
 }
 
-#query {
+#query,
+#stats {
     margin: 2em 0 0;
 }
 
@@ -767,4 +768,42 @@ hr {
 
 #no-js {
     text-align: center;
+}
+
+#stats {
+    text-align: center;
+}
+
+.statistic,
+.highlighted-statistic {
+    margin: 2em 0;
+}
+
+.highlighted-statistic {
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+
+.statistic-label {
+    margin-bottom: 0;
+}
+
+.statistic-figure {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+ol {
+    padding: 0;
+    list-style-position: inside;
+    margin: 0 0 1em;
+}
+
+ol li {
+    margin: 0;
+}
+
+.statistic-figure-large {
+    font-size: 2rem;
+    font-family: 'proxima-nova-alt-condensed', sans-serif;
 }
