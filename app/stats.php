@@ -16,19 +16,10 @@ $stats = [
     'start_party'  => assc_array_count_values( $games, 'start_party' ),
     'end_party'    => assc_array_count_values( $games, 'end_party' ),
     'rude'         => assc_array_count_values_by_intersect( $games, 'name', $rude ),
-    'mugwump'      => assc_array_count_values_by_string( $games, 'name', 'mugwump' ),
-    'ed balls'     => assc_array_count_values_by_string( $games, 'name', 'ed balls' ),
-    'adolf'        => assc_array_count_values_by_string( $games, 'name', 'adolf' ),
-    'hitler'       => assc_array_count_values_by_string( $games, 'name', 'hitler' ),
 ];
 
 $stats[ 'finished' ] = array_sum( $stats[ 'end_party' ] );
 $stats[ 'defected' ] = $stats[ 'total' ] - assc_array_count_matches_by_key( $games, 'start_party', 'end_party' );
 $stats[ 'updated' ] = date("M d Y, G:i");
-
-
-echo '<pre>';
-print_r( json_encode( $stats ) );
-echo '</pre>';
 
 file_put_contents( 'stats.json', json_encode( $stats ) );

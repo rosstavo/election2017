@@ -8,6 +8,7 @@
 
         var noJS = $('#no-js'),
             total = $('#total'),
+            stats = $('#stats'),
             survived = $('#survived'),
             died = $('#died'),
             startPartyChart = $('#start-party-chart'),
@@ -207,7 +208,9 @@
                         }
                     }
                 } );
-        });
+        } ).error( function() {
+            stats.html( '<p>Statistics currently unavailable.</p><a href="index.html">&larr; Go back</a>' );
+        } );
     } );
 
 } )( jQuery );
