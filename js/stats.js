@@ -25,6 +25,15 @@
         }
 
         /**
+         * Handy shorthand function to add commas to numbers (http://stackoverflow.com/a/1990590)
+         */
+        $.fn.digits = function(){
+            return this.each(function(){
+                $(this).text( $(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") );
+            })
+        }
+
+        /**
          * Hide #no-js box
          */
         noJS.hide();
@@ -58,7 +67,7 @@
             /**
              * Let's add some of the basic data at the top
              */
-            total.html( data.total );
+            total.html( data.total ).digits();
             survived.html( percentage( data.finished, data.total ) + '%' );
             died.html( percentage( data.total - data.finished, data.total ) + '%' );
             updated.html( data.updated );
@@ -70,9 +79,6 @@
             Chart.defaults.global.defaultFontSize = 16;
             Chart.defaults.global.defaultFontColor = 'black';
             Chart.defaults.global.title.fontFamily = "'proxima-nova-alt-condensed', sans-serif";
-            Chart.defaults.global.title.fontSize = 26;
-            Chart.defaults.global.title.display = true;
-            Chart.defaults.global.title.padding = 20;
             Chart.defaults.global.legend.position = 'bottom';
             Chart.defaults.global.legend.labels.boxWidth = 20;
             Chart.defaults.global.tooltips.mode = 'label';
@@ -97,9 +103,6 @@
                         ]
                     },
                     options: {
-                        title: {
-                            text: 'People started as:'
-                        },
                         tooltips: {
                             callbacks: {
                                 label: function(tooltipItem, data) {
@@ -129,9 +132,6 @@
                         ]
                     },
                     options: {
-                        title: {
-                            text: 'People ended as:'
-                        },
                         tooltips: {
                             callbacks: {
                                 label: function(tooltipItem, data) {
@@ -156,9 +156,6 @@
                         ]
                     },
                     options: {
-                        title: {
-                            text: 'Did people defect?'
-                        },
                         tooltips: {
                             callbacks: {
                                 label: function(tooltipItem, data) {
@@ -183,9 +180,6 @@
                         ]
                     },
                     options: {
-                        title: {
-                            text: 'How rude were people?'
-                        },
                         tooltips: {
                             callbacks: {
                                 label: function(tooltipItem, data) {
