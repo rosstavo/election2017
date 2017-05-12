@@ -68,8 +68,15 @@
              */
             Chart.defaults.global.defaultFontFamily = "'cardea', serif";
             Chart.defaults.global.defaultFontSize = 16;
+            Chart.defaults.global.defaultFontColor = 'black';
             Chart.defaults.global.title.fontFamily = "'proxima-nova-alt-condensed', sans-serif";
-            Chart.defaults.global.title.fontSize = 22;
+            Chart.defaults.global.title.fontSize = 26;
+            Chart.defaults.global.title.display = true;
+            Chart.defaults.global.title.padding = 20;
+            Chart.defaults.global.legend.position = 'bottom';
+            Chart.defaults.global.legend.labels.boxWidth = 20;
+            Chart.defaults.global.tooltips.mode = 'label';
+            Chart.defaults.global.tooltips.cornerRadius = 0;
 
             var startPartyChartObj = new Chart( startPartyChart, {
                     type: 'doughnut',
@@ -91,14 +98,9 @@
                     },
                     options: {
                         title: {
-                            display: true,
                             text: 'People started as:'
                         },
-                        legend: {
-                            position: 'bottom'
-                        },
                         tooltips: {
-                            mode: 'label',
                             callbacks: {
                                 label: function(tooltipItem, data) {
                                     return data['datasets'][0]['data'][tooltipItem['index']] + '%';
@@ -128,14 +130,9 @@
                     },
                     options: {
                         title: {
-                            display: true,
                             text: 'People ended as:'
                         },
-                        legend: {
-                            position: 'bottom'
-                        },
                         tooltips: {
-                            mode: 'label',
                             callbacks: {
                                 label: function(tooltipItem, data) {
                                     return data['datasets'][0]['data'][tooltipItem['index']] + '%';
@@ -152,22 +149,17 @@
                             {
                                 data: Object.values( defections ),
                                 backgroundColor: [
-                                    "#e74c3c",
-                                    "#3498db"
+                                    "#f1c40f",
+                                    "#ecf0f1"
                                 ]
                             }
                         ]
                     },
                     options: {
                         title: {
-                            display: true,
                             text: 'Did people defect?'
                         },
-                        legend: {
-                            position: 'bottom'
-                        },
                         tooltips: {
-                            mode: 'label',
                             callbacks: {
                                 label: function(tooltipItem, data) {
                                     return data['datasets'][0]['data'][tooltipItem['index']] + '%';
@@ -185,21 +177,16 @@
                                 data: Object.values( rudeNames ),
                                 backgroundColor: [
                                     "#e74c3c",
-                                    "#ddd"
+                                    "#ecf0f1"
                                 ]
                             }
                         ]
                     },
                     options: {
                         title: {
-                            display: true,
                             text: 'How rude were people?'
                         },
-                        legend: {
-                            position: 'bottom'
-                        },
                         tooltips: {
-                            mode: 'label',
                             callbacks: {
                                 label: function(tooltipItem, data) {
                                     return data['datasets'][0]['data'][tooltipItem['index']] + '%';

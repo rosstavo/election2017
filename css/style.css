@@ -774,14 +774,8 @@ hr {
     text-align: center;
 }
 
-.statistic,
-.highlighted-statistic {
+.statistic {
     margin: 2em 0;
-}
-
-.highlighted-statistic {
-    border: 1px solid #ddd;
-    padding: 1em;
 }
 
 .statistic-label {
