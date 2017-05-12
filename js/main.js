@@ -191,7 +191,7 @@
                             },
                             {
                                 answers: [ 'mechanic', 'call a mechanic', 'b', '2' ],
-                                result: "<p>You call a <strong>mechanic</strong>, who opens up the hood. &ldquo;There&rsquo;s your problem. The sound-byte circuit is fried. Looks like it was short-circuited by a copy of the <em>1975 Conservative manifesto</em>.&rdquo;</p><p>He says the part can be replaced but due to its age the part has to be made-to-order and takes up to 12 weeks to arrive. Since that&rsquo;s no good, you just leave her as-is and hope no-one will notice. On to the polling station.</p>",
+                                result: "<p>You call a <strong>mechanic</strong>, who opens up the hood. &ldquo;There&rsquo;s your problem. The sound-byte circuit is fried. Looks like it was short-circuited by a copy of the <em>1979 Conservative manifesto</em>.&rdquo;</p><p>He says the part can be replaced but due to its age the part has to be made-to-order and takes up to 12 weeks to arrive. Since that&rsquo;s no good, you just leave her as-is and hope no-one will notice. On to the polling station.</p>",
                                 gameover: false
                             },
                             {
